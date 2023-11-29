@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #C3CBC0;
+  color: #310c1b;
+  font-family: 'Kanit', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+}
+
+header img {
+  width: 12rem;
+}
+
+nav ul {
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+nav a{
+  text-decoration: none;
+  color: #310c1b;
+}
+
+hr {
+  border-bottom: 1px solid #7f7921;
+  width: 85%;
+  margin: 0 auto;
+}
+
+section {
+  width: 90%;
+  margin: 3rem auto;
+}
+
+#sobre img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#sobre div h1,
+#produtos h2 {
+  font-size: 2rem;
+}
+
+#sobre div p {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+#produtos .carrossel img {
+  max-width: 30rem;
+  border-radius: 1rem;
+  margin: 1.8rem 1rem 1rem;
+}
+
+#produtos div h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#produtos #gridProdutos p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  opacity: 0.7;
+}
+
+#produtos div #btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto 3.5rem;
+  padding: .5rem 0;
+  font-size: 1.5rem;
+  font-bold: bold;
+  color: #310c1b;
+  background: #20da70;
+  font-family: 'Kanit', sans-serif;
+  border: 1px solid #e2e2f9;
+  border-radius: .6rem;
+}
+
+#produtos div i {
+  font-size: 1.8rem;
+  padding-left: .5rem
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem
+}
+
+footer img {
+  width: 10rem;
+}
+
+@media screen and (min-width: 639.9px) {
+
+  header {
+    justify-content: space-around;
+    padding: 1.5rem 0;
+  }
+
+  header img {
+    width: 14rem;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  section {
+    width: 70%;
+    margin: 3rem auto;
+  }
+
+  #sobre div h1,
+  #produtos h2 {
+    font-size: 3rem;
+  }
+
+  #sobre div p {
+    font-size: 1.6rem;
+  }
+
+  #produtos h2 {
+  font-size: 3.5rem;
+  margin-bottom: 2.5rem;
+  }
+
+  #produtos .carrossel img {
+    max-width: 100%;
+  }
+
+  #produtos div h3 {
+    font-size: 2rem;
+  }
+
+  #produtos #gridProdutos p {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+  }
+
+  #produtos div button {
+    width: 60%;
+    margin: 0 auto 3.5rem;
+    padding: .5rem 0;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  #produtos div i {
+    font-size: 2rem;
+    padding-left: .5rem
+  }
+
+  footer {
+    justify-content: space-around;
+    padding: 1.8rem
+  }
+  
+  footer img {
+    width: 10rem;
+  }
+
+  footer p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px){  
+
+  section {
+    width: 70%;
+  }
+
+  nav ul {
+    font-size: 2rem;
+  }
+
+  #sobre div h1 {
+  font-size: 3rem;
+  }
+
+  #sobre div p {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  #produtos #gridProdutos {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4rem;
+  }
+
+  #produtos #gridProdutos p {
+    line-height: 1.8rem;
+    margin-top: 3.5rem;
+  }
+
+  #produtos #gridProdutos button{
+    width: 85%;
+  }
+
+  #produtos #gridProdutos button:hover {
+    background-color: #037bf5;
+    color: white;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  header img {
+    width: 20rem;
+  }
+
+  nav ul {
+    font-size: 2.2rem;
+  }
+
+  section {
+    width: 80%;
+  }
+
+  #sobre {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4rem;
+  }
+
+  #sobre div h1 {
+  font-size: 3.5rem;
+  border-bottom: 3px solid #7f7921;
+  margin-bottom: 3rem; 
+  }
+
+  #sobre div p {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  #produtos #gridProdutos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: .5rem;
+  }
+
+  #produtos #gridProdutos p{
+    line-height: 2rem;
+  }
+
+  #produtos #gridProdutos > div{
+    background: rgba( 255, 255, 255, 0.3 );
+    backdrop-filter: blur( 0.5px );
+    border-radius: 0.8rem;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 0 1rem;
+  }
+
+  #produtos #gridProdutos img{
+    min-height: 150px;
+  }
+
+  #produtos #gridProdutos button{
+    width: 100%;
+  }
+
+  #produtos #gridProdutos button:hover {
+    background-color: #037bf5;
+    color: white;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  #produtos #gridProdutos .carrossel{
+    position: relative;
+  }
+
+  #produtos #gridProdutos .slick-prev, 
+  #produtos #gridProdutos .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+  }
+
+  #produtos #gridProdutos .slick-prev {
+    left: 0;
+    z-index: 1;
+  }
+
+  #produtos #gridProdutos .slick-next {
+    right: 0;
+    z-index: 1;
+  }
+
+  #produtos #gridProdutos .slick-prev:hover, 
+  #produtos #gridProdutos .slick-next:hover {
+    background: none;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    color: black !important;
+  }
+}
